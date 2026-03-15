@@ -1,88 +1,80 @@
-# Miscellaneous
+# =========================
+# Geral / Miscellaneous
+# =========================
 __pycache__/
 *.pyc
 *.pyo
 *.pyd
-firebase_service_account.json
-
-.env
-venv/
-.env.*
-
-.vscode/
-.idea/
-
-.DS_Store
-Thumbs.db
-*.class
 *.log
 *.swp
+*.class
+*.DS_Store
+Thumbs.db
+firebase_service_account.json
+.env
+.env.*
+venv/
+.idea/
+.vscode/
 .atom/
 .build/
 .buildlog/
-.history
+.history/
 .svn/
 .swiftpm/
 migrate_working_dir/
 
-# IntelliJ related
-*.iml
-*.ipr
-*.iws
-
-# The .vscode folder contains launch configuration and tasks you configure in
-# VS Code which you may wish to be included in version control, so this line
-# is commented out by default.
-#.vscode/
-
-# Flutter/Dart/Pub related
-**/doc/api/
-**/ios/Flutter/.last_build_id
+# =========================
+# Flutter/Dart
+# =========================
 .dart_tool/
 .flutter-plugins
 .flutter-plugins-dependencies
 .pub-cache/
 .pub/
+.packages
+**/doc/api/
+
+# Build outputs
 /build/
+android/app/build/
+ios/Flutter/Flutter.framework
+ios/Flutter/App.framework
+ios/Flutter/Generated.xcconfig
+macos/Flutter/ephemeral/
+windows/flutter/ephemeral/
+linux/flutter/ephemeral/
 
-# Symbolication related
+# Symbolication / Obfuscation
 app.*.symbols
-
-# Obfuscation related
 app.*.map.json
 
-# Android Studio will place build artifacts here
-/android/app/debug
-/android/app/profile
-/android/app/release
-
-# Flutter
-.packages
-
-# Generated files
+# Generated
 generated_plugin_registrant.dart
 
 # Coverage
 coverage/
 
-# Android
+# Android Studio / Gradle
 android/.gradle/
 android/local.properties
+android/app/debug/
+android/app/profile/
+android/app/release/
 
-# iOS
-ios/Flutter/Flutter.framework
-ios/Flutter/App.framework
-ios/Flutter/Generated.xcconfig
-
-# MacOS
-macos/Flutter/ephemeral/
-
-# Windows
-windows/flutter/ephemeral/
-
-# Linux
-linux/flutter/ephemeral/
-
+# =========================
 # Firebase
+# =========================
 google-services.json
 GoogleService-Info.plist
+
+# =========================
+# Large files safety
+# =========================
+# Evita enviar APKs, AABs ou bibliotecas nativas grandes
+*.apk
+*.aab
+*.so
+*.jar
+*.keystore
+*.keystore.*
