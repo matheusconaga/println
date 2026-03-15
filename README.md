@@ -87,12 +87,11 @@ uvicorn main:app --host 0.0.0.0 --port 8000
 2. Ajuste a URL do backend no serviço correspondente.
 
 3. Instale as dependências:
-    ```bash
-flutter pub get
+    flutter pub get
+   
+5. Execute o app
 
-4. Execute o app
-
-🔐 Serviços Externos
+## 🔐 Serviços Externos
 
 1. Firebase Auth → autenticação de usuários
 
@@ -100,8 +99,8 @@ flutter pub get
 
 3. Neon PostgreSQL → banco de dados da aplicação
 
-📂 Estrutura do Projeto
-## Frontend
+## 📂 Estrutura do Projeto
+### Frontend
 
 lib/core/ — temas, validações, utilitários e serviços
 
@@ -113,7 +112,7 @@ lib/widgets/ — componentes reutilizáveis
 
 assets/ — imagens e ícones
 
-## Backend
+### Backend
 
 app/routers/ — rotas da API
 
